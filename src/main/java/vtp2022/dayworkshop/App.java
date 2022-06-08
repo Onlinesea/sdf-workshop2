@@ -1,5 +1,7 @@
 package vtp2022.dayworkshop;
 
+import vtp2022.dayworkshop.account.BankAccount;
+
 /**
  * Hello world!
  *

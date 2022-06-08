@@ -1,4 +1,4 @@
-package vtp2022.dayworkshop;
+package vtp2022.dayworkshop.account;
 
 //package to generate uuid
 import java.util.UUID;
@@ -92,7 +92,7 @@ public class BankAccount {
         this.accountClosingDate = accountClosingDate;
     }
 
-    protected float withdraw(String withdrawAmt){
+    public float withdraw(String withdrawAmt){
         Float  withdrawAmtF= null;
         try{
             withdrawAmtF = Float.parseFloat(withdrawAmt);             //Exception will be throw if alphaphet is throw in
@@ -129,7 +129,7 @@ public class BankAccount {
         return withdrawAmtF.floatValue();
     }
 
-    protected void deposit(String depositAmt){
+    public void deposit(String depositAmt){
         try{
             Float depositAmtF = Float.parseFloat(depositAmt);             //Exception will be throw if alphaphet is throw in
             if(depositAmtF.floatValue()<=0){
