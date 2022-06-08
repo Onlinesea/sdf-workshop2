@@ -105,6 +105,11 @@ public class BankAccount {
 
             }
 
+            if(withdrawAmtF.floatValue()>balance){
+                throw new IllegalArgumentException("Account no money liao");
+
+            }
+
             this.balance = this.balance - withdrawAmtF.floatValue(); // transact first then show in balance 
             //Construct the transaction history event log 
             StringBuilder txnStrbld = new StringBuilder();
