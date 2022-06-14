@@ -6,9 +6,9 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class BankAccount {
-    private String name = "";
+    protected final String name ;
 
-    private String acctId= UUID.randomUUID().toString().substring(0,8);
+    protected final String acctId= UUID.randomUUID().toString().substring(0,8);
 
     private LinkedList<String> transaction = new LinkedList<String>();
  
@@ -36,14 +36,9 @@ public class BankAccount {
     public String getName() {
         return name;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
+
     public String getAcctId() {
         return acctId;
-    }
-    public void setAcctId(String acctId) {
-        this.acctId = acctId;
     }
     public int getBankAccount() {
         return bankAccount;

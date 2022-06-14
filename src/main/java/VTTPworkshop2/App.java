@@ -15,12 +15,15 @@ public class App
         BankAccount xhBank = new BankAccount("xinhai", 5000);
         xhBank.deposit("1000");
         xhBank.deposit("1000");
-        xhBank.withdraw("-200");
+        xhBank.withdraw("200");
         System.out.println(xhBank.getBalance());
         //System.out.println(xhBank.getTransaction());
         FixedDepositAccount xinhai = new FixedDepositAccount("xinhai", 5000);
         System.out.println(xinhai.getBalance());
         System.out.println(xhBank.getTransaction());
+        //xhBank.setName("Onlinesea");
+        System.out.println(xhBank.getName());
+
 
     }
 }
